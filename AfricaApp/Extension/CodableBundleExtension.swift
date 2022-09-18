@@ -8,7 +8,11 @@
 import Foundation
 
 extension Bundle{
-    func decode(_ file: String) -> [CoverImage]{
+    
+    // <T: {something}> --> these are called swift generics
+    // T stands for type. We can use any other letter in this place
+    // since we want to resue this extension to various json decoding, we are just ensuring the jsons sent belong to codable protocol
+    func decode<T: Codable>(_ file: String) -> T{
         // 1. Locate the json file
         // 2. Create a property for the data
         // 3. Create a decoder
@@ -25,7 +29,7 @@ extension Bundle{
         
         let decoder = JSONDecoder()
         
-        guard let loaded = try? decoder.decode([CoverImage].self, from: data) else {
+        guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from bundle")
         }
         
