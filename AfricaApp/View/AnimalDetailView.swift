@@ -40,8 +40,35 @@ struct AnimalDetailView: View {
                 
                 Group{
                   HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in pictures")
+                }
+                .padding(.horizontal)
+                
+                Group{
+                    HeadingView(headingImage: "questionark.circle", headingText: "Did you know?")
+                    InsertFactView(animal: animal)
+                }
+                .padding(.horizontal)
+                
+                Group{
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
                     
-                    InsertGalleryView(animal: animal)
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
+                
+                Group{
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    
+                    InsertMapView()
+                }
+                .padding(.horizontal)
+                
+                Group{
+                    HeadingView(headingImage: "books.vertical", headingText: "Learn More")
+                    
+                    ExternalWebLinkView(animal: animal)
                 }
                 .padding(.horizontal)
                 
