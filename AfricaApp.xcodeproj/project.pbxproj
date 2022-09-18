@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B29E166A28D7C8BD00C19D3F /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E166928D7C8BD00C19D3F /* AnimalGridItemView.swift */; };
 		B2C9BB4428D75EDA0090CA0E /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9BB4328D75EDA0090CA0E /* AnimalDetailView.swift */; };
 		B2C9BB4628D760AD0090CA0E /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9BB4528D760AD0090CA0E /* HeadingView.swift */; };
 		B2C9BB4828D761BC0090CA0E /* InsertGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9BB4728D761BC0090CA0E /* InsertGalleryView.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B29E166928D7C8BD00C19D3F /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 		B2C9BB4328D75EDA0090CA0E /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		B2C9BB4528D760AD0090CA0E /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		B2C9BB4728D761BC0090CA0E /* InsertGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertGalleryView.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				B2C9BB5528D773A90090CA0E /* VideoPlayerView.swift */,
 				B2C9BB6628D7822F0090CA0E /* MapAnnotationView.swift */,
 				B2C9BB6828D79BFC0090CA0E /* MotionAnimationView.swift */,
+				B29E166928D7C8BD00C19D3F /* AnimalGridItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				B2F7E68C28D74F6B00C4C1B8 /* CodableBundleExtension.swift in Sources */,
 				B2C9BB5028D76CD60090CA0E /* VideoModel.swift in Sources */,
 				B2C9BB6528D77DF70090CA0E /* LocationModel.swift in Sources */,
+				B29E166A28D7C8BD00C19D3F /* AnimalGridItemView.swift in Sources */,
 				B2C9BB4C28D767780090CA0E /* InsertMapView.swift in Sources */,
 				B2C9BB4828D761BC0090CA0E /* InsertGalleryView.swift in Sources */,
 				B2C9BB4628D760AD0090CA0E /* HeadingView.swift in Sources */,
