@@ -14,6 +14,8 @@ struct ContentView: View {
     
     @State private var isGridViewActive: Bool = false
     
+    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    
     var body: some View {
         
         NavigationView {
@@ -31,7 +33,17 @@ struct ContentView: View {
                         }
                     }
                 } else {
-                    Text("Grid view is active")
+                    ScrollView(.vertical, showsIndicators: false) {
+                        LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                            ForEach(animals) { animal in
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                }
+                            }
+                        }
+                        .padding(10)
+                        .animation(.easeIn)
+                    }
                 }
             }
             .navigationBarTitle("Africa", displayMode: .large)
